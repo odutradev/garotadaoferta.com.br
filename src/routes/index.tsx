@@ -8,13 +8,13 @@ const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        {routesPaths.map(({ path, privateRoute, routes }) =>
+        {routesPaths.map(({ path, routes }) =>
           routes.map(([itemPath, element]) => {
             return (
               <Route
                 key={path + itemPath}
                 path={path + itemPath}
-                element={privateRoute && token == null ? <Navigate to="/signin" /> : element}
+                element={element}
               />
           )})
         )}
