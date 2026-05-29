@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 580" fill="none">
+  <rect width="380" height="580" fill="#FFE4F5" rx="24"/>
+
+  <ellipse cx="190" cy="155" rx="78" ry="90" fill="#F8C0D8" opacity="0.5"/>
+  <circle cx="190" cy="110" r="58" fill="#F8C0D8" opacity="0.4"/>
+
+  <ellipse cx="190" cy="350" rx="130" ry="185" fill="#E91E8C" opacity="0.12"/>
+
+  <circle cx="142" cy="105" r="5" fill="#E91E8C" opacity="0.4"/>
+  <circle cx="238" cy="105" r="5" fill="#E91E8C" opacity="0.4"/>
+  <path d="M165 130 Q190 148 215 130" stroke="#E91E8C" strokeWidth="2.5" fill="none" strokeLinecap="round" opacity="0.6"/>
+
+  <rect x="100" y="195" width="180" height="240" rx="16" fill="#E91E8C" opacity="0.18"/>
+  <rect x="162" y="435" width="24" height="60" rx="8" fill="#E91E8C" opacity="0.18"/>
+  <rect x="194" y="435" width="24" height="60" rx="8" fill="#E91E8C" opacity="0.18"/>
+
+  <rect x="14" y="14" width="352" height="552" rx="20" stroke="#E91E8C" strokeWidth="2" strokeDasharray="10 5" opacity="0.4"/>
+
+  <text x="190" y="516" text-anchor="middle" font-family="Nunito, sans-serif" font-size="13" font-weight="700" fill="#E91E8C" opacity="0.7">
+    ✦ Substitua por character.svg ✦
+  </text>
+
+  <circle cx="52" cy="52" r="10" fill="#FFD0EC" opacity="0.8"/>
+  <circle cx="330" cy="52" r="6" fill="#FFD0EC" opacity="0.8"/>
+  <circle cx="330" cy="530" r="10" fill="#FFD0EC" opacity="0.8"/>
+  <circle cx="52" cy="530" r="6" fill="#FFD0EC" opacity="0.8"/>
+  <circle cx="190" cy="30" r="4" fill="#E91E8C" opacity="0.4"/>
+  <circle cx="190" cy="550" r="4" fill="#E91E8C" opacity="0.4"/>
+</svg>
