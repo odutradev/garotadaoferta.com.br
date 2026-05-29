@@ -2,7 +2,7 @@ import type { HeroConfig, TrustBadge } from './types'
 
 export const heroConfig: HeroConfig = {
   youtubeVideoId: 'YOUR_YOUTUBE_VIDEO_ID',
-  whatsappLink: 'https://wa.me/5511999999999',
+  whatsappLink: 'https://chat.whatsapp.com/BZBmnQs7Z3MGyQkoWLV82e',
   eyebrow: 'CHEGA DE PAGAR CARO! 💗',
   headlineLine1: 'AS MELHORES OFERTAS',
   headlineLine2: 'ESTÃO AQUI!',
