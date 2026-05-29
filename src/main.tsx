@@ -1,11 +1,9 @@
-import { ToastContainer } from 'react-toastify';
 import { createRoot } from 'react-dom/client';
 import { StrictMode, useEffect } from 'react';
 
-import { toastContainerConfig } from '@assets/data/toast';
 import defaultConfig from '@assets/config/default';
-import Router from '@routes/index';
 import GlobalStyles from '@styles/globalStyles';
+import Router from '@routes/index';
 
 const App = () => {
   useEffect(() => {
@@ -14,9 +12,8 @@ const App = () => {
 
   return (
     <>
-      <ToastContainer {...toastContainerConfig} />
       <Router />
-<GlobalStyles />
+      <GlobalStyles />
     </>
   );
 };
