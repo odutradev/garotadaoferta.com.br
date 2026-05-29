@@ -1,7 +1,6 @@
-import Icon from '@components/icon'
-
-import { navItems } from './defaultData'
 import { HeaderWrapper, HeaderInner, Logo, LogoText, Nav, NavItemWrapper, NavIcon, NavLabel } from './styles'
+import { navItems } from '../../../../landingConfig'
+import Icon from '@components/icon'
 
 const LogoIcon = () => (
   <svg viewBox="0 0 56 60" width="48" height="52" fill="none" xmlns="http://www.w3.org/2000/svg">

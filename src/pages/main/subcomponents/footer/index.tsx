@@ -1,7 +1,6 @@
-import Icon from '@components/icon'
-
-import { footerBadges } from './defaultData'
 import { FooterWrapper, FooterInner, FooterBadgeItem } from './styles'
+import { footerBadges } from '../../../../landingConfig'
+import Icon from '@components/icon'
 
 const Footer = () => (
   <FooterWrapper>

@@ -1,8 +1,7 @@
+import { HeroSection, HeroInner, HeroContent, Eyebrow, HeroHeadline, HeroDescription, VideoContainer, CharacterWrapper, CtaArea, CtaButton, CtaIconCircle, CtaSubtext, TrustRow, TrustBadgeItem } from './styles'
+import { heroConfig, trustBadges } from '../../../../landingConfig'
 import characterImage from '@assets/images/character.svg'
 import Icon from '@components/icon'
-
-import { heroConfig, trustBadges } from './defaultData'
-import { HeroSection, HeroInner, HeroContent, Eyebrow, HeroHeadline, HeroDescription, VideoContainer, CharacterWrapper, CtaArea, CtaButton, CtaIconCircle, CtaSubtext, TrustRow, TrustBadgeItem } from './styles'
 
 const WhatsAppIcon = () => (
   <svg viewBox="0 0 24 24" width="22" height="22" fill="white">

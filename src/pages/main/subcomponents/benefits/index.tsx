@@ -1,7 +1,6 @@
-import Icon from '@components/icon'
-
-import { benefitCards } from './defaultData'
 import { BenefitsSection, BenefitsInner, SectionTitle, TitleDivider, BenefitsGrid, BenefitCardWrapper, BenefitIconCircle, BenefitTitle, BenefitDescription } from './styles'
+import { benefitCards } from '../../../../landingConfig'
+import Icon from '@components/icon'
 
 const Benefits = () => (
   <BenefitsSection id="benefits">

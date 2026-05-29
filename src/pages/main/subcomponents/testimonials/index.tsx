@@ -1,7 +1,6 @@
-import Icon from '@components/icon'
-
-import { testimonials } from './defaultData'
 import { TestimonialsSection, TestimonialsInner, SectionTitle, TitleDivider, TestimonialsGrid, TestimonialCard, TestimonialHeader, Avatar, TestimonialName, TestimonialText, StarRow } from './styles'
+import { testimonials } from '../../../../landingConfig'
+import Icon from '@components/icon'
 
 const StarRating = ({ count }: { count: number }) => (
   <StarRow>
