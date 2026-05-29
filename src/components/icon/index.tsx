@@ -1,6 +1,8 @@
+import type { ReactElement } from 'react'
+
 import type { IconName, IconProps } from './types'
 
-type IconFactory = (size: number, color: string) => JSX.Element
+type IconFactory = (size: number, color: string) => ReactElement
 
 const iconMap: Record<IconName, IconFactory> = {
   tag: (size, color) => (
