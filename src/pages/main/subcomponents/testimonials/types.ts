@@ -5,4 +5,5 @@ export type Testimonial = {
   rating: number
   initials: string
   avatarColor: string
+  avatarUrl?: string
 }

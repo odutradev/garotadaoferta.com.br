@@ -1,7 +1,6 @@
 import type { HeroConfig, TrustBadge } from '@pages/main/subcomponents/hero/types'
-import type { Testimonial } from '@pages/main/subcomponents/testimonials/types'
-import type { BenefitCard } from '@pages/main/subcomponents/benefits/types'
 import type { FooterBadge } from '@pages/main/subcomponents/footer/types'
+import type { BenefitCard } from '@pages/main/subcomponents/benefits/types'
 import type { NavItem } from '@pages/main/subcomponents/header/types'
 
 export const heroConfig: HeroConfig = {
@@ -45,33 +44,6 @@ export const benefitCards: BenefitCard[] = [
     iconName: 'shield',
     title: 'GRUPO 100% SEGURO',
     description: 'Ambiente seguro, sem spam e com conteúdo de valor.',
-  },
-]
-
-export const testimonials: Testimonial[] = [
-  {
-    id: 'fernanda',
-    name: 'Fernanda A.',
-    text: 'As ofertas são incríveis! Já economizei muito com os cupons que recebo todos os dias.',
-    rating: 5,
-    initials: 'FA',
-    avatarColor: '#F06292',
-  },
-  {
-    id: 'juliana',
-    name: 'Juliana Martins',
-    text: 'Nunca vi promoções tão boas! O grupo mudou minha forma de comprar.',
-    rating: 5,
-    initials: 'JM',
-    avatarColor: '#E91E8C',
-  },
-  {
-    id: 'carla',
-    name: 'Carla Souza',
-    text: 'Ofertas todos os dias, cupons reais e um grupo super organizado. Indico demais!',
-    rating: 5,
-    initials: 'CS',
-    avatarColor: '#C01573',
   },
 ]
 

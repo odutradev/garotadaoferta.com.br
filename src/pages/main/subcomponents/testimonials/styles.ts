@@ -77,6 +77,15 @@ export const TestimonialHeader = styled.div`
   gap: 12px;
 `
 
+export const AvatarImage = styled.img`
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+`
+
 export const Avatar = styled.div<{ $color: string }>`
   width: 52px;
   height: 52px;
