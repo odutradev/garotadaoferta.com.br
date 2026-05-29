@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-import { colors } from './tokens'
+import { colors, fonts } from './tokens'
 
 const GlobalStyles = createGlobalStyle`
   *, *::before, *::after {
@@ -14,11 +14,15 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: 'Nunito', 'Segoe UI', sans-serif;
+    font-family: ${fonts.body};
     background-color: ${colors.primaryBg};
     color: ${colors.text};
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: ${fonts.title};
   }
 
   a {

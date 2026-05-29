@@ -18,6 +18,11 @@ export const colors = {
   shadowLg: 'rgba(233, 30, 140, 0.28)',
 } as const
 
+export const fonts = {
+  body: "'Nunito', 'Segoe UI', sans-serif",
+  title: "'Outfit', 'Nunito', sans-serif",
+} as const
+
 export const breakpoints = {
   mobile: '768px',
   tablet: '1024px',
