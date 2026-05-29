@@ -21,35 +21,33 @@
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-    "baseUrl": "./src",
-    "ignoreDeprecations": "5.0",
     "paths": {
       "@components/*": [
-        "components/*"
+        "./src/components/*"
       ],
       "@actions/*": [
-        "actions/*"
+        "./src/actions/*"
       ],
       "@assets/*": [
-        "assets/*"
+        "./src/assets/*"
       ],
       "@styles/*": [
-        "styles/*"
+        "./src/styles/*"
       ],
       "@stores/*": [
-        "stores/*"
+        "./src/stores/*"
       ],
       "@routes/*": [
-        "routes/*"
+        "./src/routes/*"
       ],
       "@hooks/*": [
-        "hooks/*"
+        "./src/hooks/*"
       ],
       "@pages/*": [
-        "pages/*"
+        "./src/pages/*"
       ],
       "@utils/*": [
-        "utils/*"
+        "./src/utils/*"
       ]
     }
   },
