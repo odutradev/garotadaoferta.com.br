@@ -16,7 +16,7 @@ const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   useEffect(() => {
-    const timer = setInterval(() => setCurrentIndex(prev => (prev + 1) % testimonials.length), 4000)
+    const timer = setInterval(() => setCurrentIndex(prev => (prev + 1) % testimonials.length), 10*1000)
     return () => clearInterval(timer)
   }, [])
 
