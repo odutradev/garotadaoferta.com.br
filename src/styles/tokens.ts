@@ -19,8 +19,8 @@ export const colors = {
 } as const
 
 export const fonts = {
-  body: "'Nunito', 'Segoe UI', sans-serif",
-  title: "'Outfit', 'Nunito', sans-serif",
+  body: "var(--font-nunito), 'Segoe UI', sans-serif",
+  title: "var(--font-outfit), var(--font-nunito), sans-serif",
 } as const
 
 export const breakpoints = {

@@ -1,4 +1,10 @@
-import { BenefitsSection, BenefitsInner, SectionTitle, TitleDivider, BenefitsGrid, BenefitCardWrapper, BenefitIconCircle, BenefitTitle, BenefitDescription } from './styles'
+'use client'
+
+import {
+  BenefitsSection, BenefitsInner, SectionTitle, TitleDivider,
+  BenefitsGrid, BenefitCardWrapper, BenefitIconCircle,
+  BenefitTitle, BenefitDescription,
+} from './styles'
 import { benefitCards } from '../../../../landingConfig'
 import Icon from '@components/icon'
 

@@ -1,3 +1,5 @@
+'use client'
+
 import Header from './subcomponents/header'
 import Benefits from './subcomponents/benefits'
 import Testimonials from './subcomponents/testimonials'

@@ -1,3 +1,5 @@
+'use client'
+
 import { HeaderWrapper, HeaderInner, Logo, LogoText, Nav, NavItemWrapper, NavIcon, NavLabel } from './styles'
 import { navItems } from '../../../../landingConfig'
 import Icon from '@components/icon'

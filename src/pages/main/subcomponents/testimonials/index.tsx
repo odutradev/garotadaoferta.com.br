@@ -1,6 +1,12 @@
+'use client'
+
 import { useState, useEffect } from 'react'
 
-import { TestimonialsSection, TestimonialsInner, SectionTitle, TitleDivider, TestimonialsGrid, TestimonialCard, TestimonialHeader, Avatar, AvatarImage, TestimonialName, TestimonialText, StarRow } from './styles'
+import {
+  TestimonialsSection, TestimonialsInner, SectionTitle, TitleDivider,
+  TestimonialsGrid, TestimonialCard, TestimonialHeader, Avatar,
+  AvatarImage, TestimonialName, TestimonialText, StarRow,
+} from './styles'
 import { testimonials } from './data'
 import Icon from '@components/icon'
 
@@ -16,11 +22,16 @@ const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   useEffect(() => {
-    const timer = setInterval(() => setCurrentIndex(prev => (prev + 1) % testimonials.length), 10*1000)
+    const timer = setInterval(
+      () => setCurrentIndex(prev => (prev + 1) % testimonials.length),
+      10 * 1000
+    )
     return () => clearInterval(timer)
   }, [])
 
-  const visibleTestimonials = Array.from({ length: 3 }).map((_, i) => testimonials[(currentIndex + i) % testimonials.length])
+  const visibleTestimonials = Array.from({ length: 3 }).map(
+    (_, i) => testimonials[(currentIndex + i) % testimonials.length]
+  )
 
   return (
     <TestimonialsSection id="testimonials">
@@ -34,6 +45,7 @@ const Testimonials = () => {
             <TestimonialCard key={`${item.id}-${index}`}>
               <TestimonialHeader>
                 {item.avatarUrl ? (
+                  // eslint-disable-next-line @next/next/no-img-element
                   <AvatarImage src={item.avatarUrl} alt={item.name} />
                 ) : (
                   <Avatar $color={item.avatarColor}>{item.initials}</Avatar>

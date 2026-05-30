@@ -1,3 +1,5 @@
+'use client'
+
 import { FooterWrapper, FooterInner, FooterBadgeItem } from './styles'
 import { footerBadges } from '../../../../landingConfig'
 import Icon from '@components/icon'
