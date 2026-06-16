@@ -19,7 +19,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'amanda',
     name: 'Amanda Oliveira',
-    text: 'Meninas, acabei de comprar meu secador com 60% de desconto pelo link do grupo! Tô chocada, valeu muito a pena.',
+    text: 'Entrei por curiosidade e hoje não compro praticamente nada sem olhar o grupo primeiro. Já encontrei várias ofertas que eu teria perdido.',
     rating: 5,
     initials: 'AO',
     avatarColor: '#F06292',
@@ -28,7 +28,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'beatriz',
     name: 'Beatriz Santos',
-    text: 'Sempre duvidei desses cupons, mas testei o da Shopee e funcionou na hora. Já economizei mais de R$ 200 esse mês!',
+    text: 'Eu sempre descobria as promoções quando já tinham acabado. Depois que entrei no grupo, comecei a receber tudo muito mais rápido.',
     rating: 5,
     initials: 'BS',
     avatarColor: '#E91E8C',
@@ -37,7 +37,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'camila',
     name: 'Camila Rodrigues',
-    text: 'As promoções de fralda e lenço umedecido salvam a vida das mães! Indico o Garota da Oferta pra todo mundo.',
+    text: 'Como mãe, qualquer economia faz diferença. Já aproveitei várias ofertas de produtos para casa e para as crianças.',
     rating: 5,
     initials: 'CR',
     avatarColor: '#C01573',
@@ -46,7 +46,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'dani',
     name: 'Daniela Costa',
-    text: 'Consegui pegar o perfume que eu queria há meses numa promo relâmpago que soltaram lá no VIP. Amei demais 💖',
+    text: 'Peguei um perfume que estava namorando há meses por um preço muito melhor do que eu encontrava pesquisando sozinha.',
     rating: 5,
     initials: 'DC',
     avatarColor: '#9C27B0',
@@ -55,7 +55,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'eduarda',
     name: 'Eduarda Lima',
-    text: 'Achei que ia ser só spam, mas mandam as melhores ofertas de skincare da gringa. Peguei meu hidratante pela metade do preço!',
+    text: 'Eu adoro que elas filtram tudo. Não preciso ficar horas procurando promoção na internet.',
     rating: 5,
     initials: 'EL',
     avatarColor: '#D81B60',
@@ -64,7 +64,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'fabiana',
     name: 'Fabiana Melo',
-    text: 'Melhor grupo de descontos! Não perco mais tempo garimpando, elas mandam tudo mastigadinho e com os cupons testados.',
+    text: 'Hoje eu sinto que estou sempre um passo na frente nas compras. As melhores oportunidades chegam primeiro no grupo.',
     rating: 5,
     initials: 'FM',
     avatarColor: '#880E4F',
@@ -73,7 +73,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'gabriela',
     name: 'Gabriela Alves',
-    text: 'Gente, as promos de maquiagem são absurdas! Renovei minha necessaire gastando super pouco.',
+    text: 'Os achadinhos de maquiagem e autocuidado são os meus favoritos. Já economizei bastante em produtos que eu uso no dia a dia.',
     rating: 4,
     initials: 'GA',
     avatarColor: '#AD1457',
@@ -82,7 +82,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'heloisa',
     name: 'Heloísa Fernandes',
-    text: 'Comprei aquele robô aspirador que todo mundo fala num bug de preço que mandaram. Melhor investimento do ano!',
+    text: 'Comprei vários itens para minha casa por preços que eu provavelmente nunca encontraria sozinha.',
     rating: 5,
     initials: 'HF',
     avatarColor: '#E91E63',
@@ -91,7 +91,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'isabela',
     name: 'Isabela Castro',
-    text: 'Adoro que tem cupom pra IFood e mercado toda semana! Ajuda muito no fim do mês.',
+    text: 'Uma amiga me indicou e foi uma das melhores descobertas que fiz esse ano. Sempre encontro algo interessante por lá.',
     rating: 5,
     initials: 'IC',
     avatarColor: '#F48FB1',
@@ -100,7 +100,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'julia',
     name: 'Júlia Ribeiro',
-    text: 'Peguei uma mala de viagem incrível pra minhas férias no link de ontem. Vocês arrasam nas indicações.',
+    text: 'Eu gosto porque não é aquele grupo cheio de mensagens sem sentido. Só chegam ofertas que realmente valem a pena.',
     rating: 5,
     initials: 'JR',
     avatarColor: '#F8BBD0',
@@ -109,7 +109,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'karina',
     name: 'Karina Martins',
-    text: 'Até meu namorado tá usando os links pra comprar jogo kkkk. Tem oferta pra tudo quanto é lado.',
+    text: 'Tem dias que entro só para dar uma olhada e sempre encontro alguma oportunidade interessante.',
     rating: 4,
     initials: 'KM',
     avatarColor: '#C2185B',
@@ -118,7 +118,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'larissa',
     name: 'Larissa Moura',
-    text: 'Comprei meu iPhone novo na Black Friday com o menor preço por causa do alerta do grupo. Sensacional!',
+    text: 'Graças aos alertas do grupo consegui comprar um celular por um valor muito melhor do que eu estava encontrando.',
     rating: 5,
     initials: 'LM',
     avatarColor: '#EC407A',
@@ -127,7 +127,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'mariana',
     name: 'Mariana Duarte',
-    text: 'Os cupons da Amazon são os melhores. Todo livro que eu quero comprar eu espero mandarem o cupom de desconto primeiro!',
+    text: 'Antes eu pesquisava em vários lugares. Agora começo olhando as ofertas que chegam no grupo.',
     rating: 5,
     initials: 'MD',
     avatarColor: '#FF4081',
@@ -136,7 +136,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'natalia',
     name: 'Natália Gomes',
-    text: 'Renovei minhas roupas de academia todinhas nos links da Shein que vocês postam. Precinho e qualidade!',
+    text: 'Renovei várias peças do meu guarda-roupa aproveitando ofertas que apareceram por lá.',
     rating: 5,
     initials: 'NG',
     avatarColor: '#FF80AB',
@@ -145,7 +145,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'olivia',
     name: 'Olívia Peixoto',
-    text: 'Amo a curadoria de produtos pra casa! Deixei minha cozinha lindíssima sem gastar um rio de dinheiro.',
+    text: 'Os produtos para organização e decoração da casa são os que eu mais adoro acompanhar.',
     rating: 4,
     initials: 'OP',
     avatarColor: '#BA68C8'
@@ -153,7 +153,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'priscila',
     name: 'Priscila Rocha',
-    text: 'Mudei meu jeito de comprar online. Agora só fecho o carrinho depois de olhar o grupo da Garota da Oferta.',
+    text: 'Depois que entrei, minha forma de comprar online mudou completamente. Hoje eu comparo tudo com as ofertas do grupo.',
     rating: 5,
     initials: 'PR',
     avatarColor: '#9C27B0'
@@ -161,7 +161,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'raquel',
     name: 'Raquel Viana',
-    text: 'Cupom de frete grátis e desconto acumulativo? Só vi aqui! Vocês salvam demais a nossa vida.',
+    text: 'Já aproveitei vários cupons e promoções que provavelmente teriam passado despercebidos por mim.',
     rating: 5,
     initials: 'RV',
     avatarColor: '#CE93D8'
@@ -169,7 +169,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'sabrina',
     name: 'Sabrina Correia',
-    text: 'Recomendei pras minhas irmãs e agora tá todo mundo viciada nos achadinhos. O cartão que lute kkkk.',
+    text: 'Indiquei para minhas irmãs e agora todas nós acompanhamos as ofertas juntas.',
     rating: 5,
     initials: 'SC',
     avatarColor: '#AB47BC'
@@ -177,7 +177,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'tatiana',
     name: 'Tatiana Barros',
-    text: 'O que mais gosto é que avisam quando é bug ou erro de preço, a gente corre e consegue aproveitar!',
+    text: 'O que mais gosto é a rapidez. Muitas oportunidades chegam no grupo antes de aparecerem em qualquer outro lugar.',
     rating: 5,
     initials: 'TB',
     avatarColor: '#E1BEE7'
@@ -185,7 +185,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 'vanessa',
     name: 'Vanessa Nogueira',
-    text: 'As dicas de promoções de fraldas e produtos infantis são ouro puro pra nós mães.',
+    text: 'Para quem gosta de economizar sem perder tempo procurando promoção, esse grupo virou indispensável.',
     rating: 5,
     initials: 'VN',
     avatarColor: '#8E24AA'
