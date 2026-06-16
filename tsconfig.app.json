@@ -43,8 +43,8 @@
       "@hooks/*": [
         "./src/hooks/*"
       ],
-      "@pages/*": [
-        "./src/pages/*"
+      "@views/*": [
+        "./src/views/*"
       ],
       "@utils/*": [
         "./src/utils/*"

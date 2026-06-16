@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 
-import Main from '../pages/main'
+import Main from '../views/main'
 
 export const metadata: Metadata = {
   title: 'Grupo VIP de Ofertas para Mulheres | Cupons e Promoções no WhatsApp',
@@ -25,7 +25,9 @@ const jsonLd = {
         width: 512,
         height: 512,
       },
-      sameAs: ['https://chat.whatsapp.com/BZBmnQs7Z3MGyQkoWLV82e'],
+      sameAs: [
+        'https://chat.whatsapp.com/BZBmnQs7Z3MGyQkoWLV82e',
+      ],
     },
     {
       '@type': 'WebSite',
@@ -33,7 +35,9 @@ const jsonLd = {
       url: 'https://garotadaoferta.com.br',
       name: 'Garota da Oferta',
       description: 'As melhores ofertas, cupons e promoções para mulheres no WhatsApp.',
-      publisher: { '@id': 'https://garotadaoferta.com.br/#organization' },
+      publisher: {
+        '@id': 'https://garotadaoferta.com.br/#organization',
+      },
       inLanguage: 'pt-BR',
       potentialAction: {
         '@type': 'SearchAction',
@@ -50,8 +54,12 @@ const jsonLd = {
       url: 'https://garotadaoferta.com.br',
       name: 'Garota da Oferta | Grupo VIP de Ofertas e Cupons para Mulheres no WhatsApp',
       description: 'Entre no grupo VIP da Garota da Oferta e receba as melhores promoções, cupons de desconto e achadinhos exclusivos para mulheres todos os dias no WhatsApp.',
-      isPartOf: { '@id': 'https://garotadaoferta.com.br/#website' },
-      about: { '@id': 'https://garotadaoferta.com.br/#organization' },
+      isPartOf: {
+        '@id': 'https://garotadaoferta.com.br/#website',
+      },
+      about: {
+        '@id': 'https://garotadaoferta.com.br/#organization',
+      },
       inLanguage: 'pt-BR',
       dateModified: new Date().toISOString(),
     },

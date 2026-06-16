@@ -1,16 +1,17 @@
-import { defineConfig, loadEnv } from 'vite';
-import react from '@vitejs/plugin-react';
-import chalk from 'chalk';
-import path from 'path';
+import { defineConfig, loadEnv } from 'vite'
+import react from '@vitejs/plugin-react'
+import chalk from 'chalk'
+import path from 'path'
 
 export default defineConfig(({ mode }) => {
-  const env = loadEnv(mode, process.cwd(), '');
-  const requiredVars:string[] = [];
+  const env = loadEnv(mode, process.cwd(), '')
+  const requiredVars: string[] = []
+
   requiredVars.forEach((key) => {
     if (!env[key]) {
-     throw new Error(chalk.red(`The environment variable ${chalk.bold(key)} is not defined.`));
+      throw new Error(chalk.red(`The environment variable ${chalk.bold(key)} is not defined.`))
     }
-  });
+  })
 
   return {
     plugins: [
@@ -26,14 +27,14 @@ export default defineConfig(({ mode }) => {
         '@stores': path.resolve(__dirname, './src/stores'),
         '@utils': path.resolve(__dirname, './src/utils'),
         '@hooks': path.resolve(__dirname, './src/hooks'),
-        '@pages': path.resolve(__dirname, './src/pages')
+        '@views': path.resolve(__dirname, './src/views'),
       },
     },
     build: {
       chunkSizeWarningLimit: 500,
       rollupOptions: {
         input: {
-          index: path.resolve(__dirname, 'index.html')
+          index: path.resolve(__dirname, 'index.html'),
         },
         output: {
           chunkFileNames: 'assets/chunks/[name]-[hash].js',
@@ -41,7 +42,7 @@ export default defineConfig(({ mode }) => {
           assetFileNames: 'assets/[ext]/[name]-[hash].[ext]',
           manualChunks: (id: string) => {
             if (id.includes('node_modules')) {
-              return id.toString().split('node_modules/')[1].split('/')[0];
+              return id.toString().split('node_modules/')[1].split('/')[0]
             }
           },
         },
@@ -49,7 +50,7 @@ export default defineConfig(({ mode }) => {
     },
     publicDir: 'public',
     server: {
-      port: 1000
-    }
-  };
-});
+      port: 1000,
+    },
+  }
+})

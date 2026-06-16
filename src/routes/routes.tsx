@@ -1,12 +1,12 @@
-import Main from "@pages/main";
+import Main from '@views/main'
 
 const routes = [
-    {
-        path: "/",
-        routes: [
-            ['/*', <Main />],
-        ]
-    }
-];
+  {
+    path: '/',
+    routes: [
+      ['/*', <Main />],
+    ],
+  },
+]
 
-export default routes;
+export default routes
