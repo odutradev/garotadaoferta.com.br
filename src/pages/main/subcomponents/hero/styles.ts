@@ -8,7 +8,7 @@ const pulse = keyframes`
 `
 
 export const HeroSection = styled.section`
-  background: linear-gradient(160deg, ${colors.heroGradientStart} 0%, ${colors.heroGradientEnd} 55%, ${colors.heroGradientStart} 100%);
+  background-color: ${colors.white};
   padding: 56px 24px 64px;
   position: relative;
   overflow: hidden;

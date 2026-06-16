@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { colors, breakpoints, maxWidth } from '@styles/tokens'
 
 export const HeaderWrapper = styled.header`
-  background-color: ${colors.white};
+  background-color: ${colors.primaryLight};
   box-shadow: 0 2px 16px ${colors.shadow};
   position: sticky;
   top: 0;

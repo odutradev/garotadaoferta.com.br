@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { colors, breakpoints, maxWidth } from '@styles/tokens'
 
 export const TestimonialsSection = styled.section`
-  background: linear-gradient(180deg, ${colors.primaryBg} 0%, ${colors.white} 100%);
+  background-color: ${colors.white};
   padding: 72px 24px;
 
   @media (max-width: ${breakpoints.mobile}) {

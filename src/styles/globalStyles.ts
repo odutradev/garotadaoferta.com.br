@@ -15,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: ${fonts.body};
-    background-color: ${colors.primaryBg};
+    background-color: ${colors.white};
     color: ${colors.text};
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
