@@ -3,8 +3,14 @@ import styled, { keyframes } from 'styled-components'
 import { colors, breakpoints, maxWidth } from '@styles/tokens'
 
 const pulse = keyframes`
-  0%, 100% { transform: scale(1); box-shadow: 0 8px 32px ${colors.shadowLg}; }
-  50% { transform: scale(1.025); box-shadow: 0 12px 40px ${colors.shadowLg}; }
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 8px 32px ${colors.shadowLg};
+  }
+  50% {
+    transform: scale(1.025);
+    box-shadow: 0 12px 40px ${colors.shadowLg};
+  }
 `
 
 export const HeroSection = styled.section`
@@ -75,18 +81,17 @@ export const HeroDescription = styled.p`
 
 export const VideoContainer = styled.div`
   position: relative;
-  padding-top: 56.25%;
+  aspect-ratio: 16 / 9;
   border-radius: 18px;
   overflow: hidden;
-  background: ${colors.dark};
-  box-shadow: 0 16px 40px ${colors.shadowLg};
 
+  
   iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    height: auto;
+    width: 360px;
     border: 0;
   }
 `

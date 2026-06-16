@@ -10,7 +10,7 @@ export const heroConfig: HeroConfig = {
   headlineLine1: 'AS MELHORES OFERTAS',
   headlineLine2: 'ESTÃO AQUI!',
   description: 'Entre agora no grupo VIP da Garota da Oferta e receba ofertas imperdíveis, cupons de desconto e novidades todos os dias direto no seu WhatsApp!',
-  ctaLabel: 'QUERO ENTRAR NO GRUPO VIP AGORA!',
+  ctaLabel: 'ENTRAR NO GRUPO AGORA!',
   ctaSubtext: 'É rápido, gratuito e pode mudar seu bolso! 💗',
 }
 
