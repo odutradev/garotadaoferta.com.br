@@ -1,10 +1,10 @@
-import type { HeroConfig, TrustBadge } from '@views/main/subcomponents/hero/types'
-import type { FooterBadge } from '@views/main/subcomponents/footer/types'
-import type { BenefitCard } from '@views/main/subcomponents/benefits/types'
-import type { NavItem } from '@views/main/subcomponents/header/types'
+import type { HeroConfig, TrustBadge } from '@pages/main/subcomponents/hero/types'
+import type { BenefitCard } from '@pages/main/subcomponents/benefits/types'
+import type { FooterBadge } from '@pages/main/subcomponents/footer/types'
+import type { NavItem } from '@pages/main/subcomponents/header/types'
 
 export const heroConfig: HeroConfig = {
-  youtubeVideoId: 'YOUR_YOUTUBE_VIDEO_ID',
+  wistiaVideoId: 'drajtxbncv',
   whatsappLink: 'https://chat.whatsapp.com/BZBmnQs7Z3MGyQkoWLV82e',
   eyebrow: 'CHEGA DE PAGAR CARO! 💗',
   headlineLine1: 'AS MELHORES OFERTAS',

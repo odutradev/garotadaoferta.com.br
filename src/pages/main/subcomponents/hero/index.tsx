@@ -31,11 +31,14 @@ const Hero = () => (
           }}
         />
         <VideoContainer>
+          <script src="https://fast.wistia.net/assets/external/E-v1.js" async />
           <iframe
-            src={`https://www.youtube.com/embed/${heroConfig.youtubeVideoId}?rel=0&showinfo=0`}
+            src={`https://fast.wistia.net/embed/iframe/${heroConfig.wistiaVideoId}?seo=true&videoFoam=false`}
             title="Garota da Oferta — Apresentação"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allow="autoplay; fullscreen"
             allowFullScreen
+            name="wistia_embed"
+            className="wistia_embed"
           />
         </VideoContainer>
       </HeroContent>
