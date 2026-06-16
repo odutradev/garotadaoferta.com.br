@@ -1,10 +1,8 @@
 'use client'
 
-import {
-  HeroSection, HeroInner, HeroContent, Eyebrow, HeroHeadline,
-  HeroDescription, VideoContainer, CharacterWrapper, CtaArea,
-  CtaButton, CtaIconCircle, CtaSubtext, TrustRow, TrustBadgeItem,
-} from './styles'
+import Image from 'next/image'
+
+import { HeroSection, HeroInner, HeroContent, Eyebrow, HeroHeadline, HeroDescription, VideoContainer, CharacterWrapper, CtaArea, CtaButton, CtaIconCircle, CtaSubtext, TrustRow, TrustBadgeItem } from './styles'
 import { heroConfig, trustBadges } from '../../../../landingConfig'
 import character from '@assets/images/character.svg'
 import Icon from '@components/icon'
@@ -43,8 +41,7 @@ const Hero = () => (
         </VideoContainer>
       </HeroContent>
       <CharacterWrapper>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={character} alt="Personagem Garota da Oferta" />
+        <Image src={character} alt="Personagem Garota da Oferta" width={380} height={500} priority />
       </CharacterWrapper>
     </HeroInner>
     <CtaArea>

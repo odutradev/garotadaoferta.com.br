@@ -1,26 +1,21 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+import routesPaths from '@routes/routes'
 
-import routesPaths from "@routes/routes";
+const Router = () => (
+  <BrowserRouter>
+    <Routes>
+      {routesPaths.map(({ path, routes }) =>
+        routes.map(([itemPath, element]) => (
+          <Route
+            key={path + itemPath}
+            path={path + itemPath}
+            element={element}
+          />
+        ))
+      )}
+    </Routes>
+  </BrowserRouter>
+)
 
-const Router = () => {
-  const token = localStorage.getItem("token");
-  return (
-    <BrowserRouter>
-      <Routes>
-        {routesPaths.map(({ path, routes }) =>
-          routes.map(([itemPath, element]) => {
-            return (
-              <Route
-                key={path + itemPath}
-                path={path + itemPath}
-                element={element}
-              />
-          )})
-        )}
-      </Routes>
-    </BrowserRouter>
-  );
-};
-
-export default Router;
+export default Router

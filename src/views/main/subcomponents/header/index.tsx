@@ -1,5 +1,7 @@
 'use client'
 
+import Image from 'next/image'
+
 import { HeaderWrapper, HeaderInner, Logo, LogoText, Nav, NavItemWrapper, NavIcon, NavLabel } from './styles'
 import { navItems } from '../../../../landingConfig'
 import Icon from '@components/icon'
@@ -8,7 +10,7 @@ const Header = () => (
   <HeaderWrapper>
     <HeaderInner>
       <Logo>
-        <img src="/images/icon.svg" alt="Garota da Oferta" width={48} height={52} />
+        <Image src="/images/icon.svg" alt="Garota da Oferta" width={48} height={52} />
         <LogoText>
           <span>Garota</span>
           <span>da Oferta</span>

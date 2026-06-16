@@ -4,7 +4,7 @@ const routes = [
   {
     path: '/',
     routes: [
-      ['/*', <Main />],
+      ['/*', <Main key="main" />],
     ],
   },
 ]

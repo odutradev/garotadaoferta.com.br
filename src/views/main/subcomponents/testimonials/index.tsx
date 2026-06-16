@@ -2,11 +2,7 @@
 
 import { useState, useEffect } from 'react'
 
-import {
-  TestimonialsSection, TestimonialsInner, SectionTitle, TitleDivider,
-  TestimonialsGrid, TestimonialCard, TestimonialHeader, Avatar,
-  AvatarImage, TestimonialName, TestimonialText, StarRow,
-} from './styles'
+import { TestimonialsSection, TestimonialsInner, SectionTitle, TitleDivider, TestimonialsGrid, TestimonialCard, TestimonialHeader, Avatar, AvatarImage, TestimonialName, TestimonialText, StarRow } from './styles'
 import { testimonials } from './data'
 import Icon from '@components/icon'
 
@@ -45,7 +41,6 @@ const Testimonials = () => {
             <TestimonialCard key={`${item.id}-${index}`}>
               <TestimonialHeader>
                 {item.avatarUrl ? (
-                  // eslint-disable-next-line @next/next/no-img-element
                   <AvatarImage src={item.avatarUrl} alt={item.name} />
                 ) : (
                   <Avatar $color={item.avatarColor}>{item.initials}</Avatar>
