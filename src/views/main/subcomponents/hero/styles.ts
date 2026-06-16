@@ -1,6 +1,5 @@
-import styled, { keyframes } from 'styled-components'
-
 import { colors, breakpoints, maxWidth } from '@styles/tokens'
+import styled, { keyframes } from 'styled-components'
 
 const pulse = keyframes`
   0%, 100% {
@@ -81,18 +80,18 @@ export const HeroDescription = styled.p`
 
 export const VideoContainer = styled.div`
   position: relative;
+  width: 100%;
+  max-width: 960px;
   aspect-ratio: 16 / 9;
   border-radius: 18px;
   overflow: hidden;
-width: auto;
-height: auto;
-  
+
   iframe {
     position: absolute;
     top: 0;
     left: 0;
-    height: 640px;
-    width: 360px;
+    width: 100%;
+    height: 100%;
     border: 0;
   }
 `

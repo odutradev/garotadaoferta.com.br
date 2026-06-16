@@ -13,55 +13,59 @@ const WhatsAppIcon = () => (
   </svg>
 )
 
-const Hero = () => (
-  <HeroSection>
-    <HeroInner>
-      <HeroContent>
-        <Eyebrow>{heroConfig.eyebrow}</Eyebrow>
-        <HeroHeadline>
-          {heroConfig.headlineLine1}
-          <br />
-          <span>{heroConfig.headlineLine2}</span>
-        </HeroHeadline>
-        <HeroDescription
-          dangerouslySetInnerHTML={{
-            __html: heroConfig.description.replace('grupo VIP', '<strong>grupo VIP</strong>'),
-          }}
-        />
-        <VideoContainer>
-          <script src="https://fast.wistia.net/assets/external/E-v1.js" async />
-          <iframe
-            src={`https://fast.wistia.net/embed/iframe/${heroConfig.wistiaVideoId}?seo=true&videoFoam=true`}
-            title="Garota da Oferta — Apresentação"
-            allow="autoplay; fullscreen"
-            allowFullScreen
-            name="wistia_embed"
-            className="wistia_embed"
+const Hero = () => {
+  const wistiaVideoId = heroConfig.wistiaVideoUrl.match(/medias\/([a-zA-Z0-9]+)/)?.[1] ?? 'drajtxbncv'
+
+  return (
+    <HeroSection>
+      <HeroInner>
+        <HeroContent>
+          <Eyebrow>{heroConfig.eyebrow}</Eyebrow>
+          <HeroHeadline>
+            {heroConfig.headlineLine1}
+            <br />
+            <span>{heroConfig.headlineLine2}</span>
+          </HeroHeadline>
+          <HeroDescription
+            dangerouslySetInnerHTML={{
+              __html: heroConfig.description.replace('grupo VIP', '<strong>grupo VIP</strong>'),
+            }}
           />
-        </VideoContainer>
-      </HeroContent>
-      <CharacterWrapper>
-        <Image src={character} alt="Personagem Garota da Oferta" width={380} height={500} priority />
-      </CharacterWrapper>
-    </HeroInner>
-    <CtaArea>
-      <CtaButton href={heroConfig.whatsappLink} target="_blank" rel="noopener noreferrer">
-        <CtaIconCircle>
-          <WhatsAppIcon />
-        </CtaIconCircle>
-        {heroConfig.ctaLabel}
-      </CtaButton>
-      <CtaSubtext>{heroConfig.ctaSubtext}</CtaSubtext>
-      <TrustRow>
-        {trustBadges.map(badge => (
-          <TrustBadgeItem key={badge.id}>
-            <Icon name={badge.iconName} size={16} color="#E91E8C" />
-            {badge.label}
-          </TrustBadgeItem>
-        ))}
-      </TrustRow>
-    </CtaArea>
-  </HeroSection>
-)
+          <VideoContainer>
+            <script src="https://fast.wistia.net/assets/external/E-v1.js" async />
+            <iframe
+              src={`https://fast.wistia.net/embed/iframe/${wistiaVideoId}?seo=true&videoFoam=true`}
+              title="Garota da Oferta — Apresentação"
+              allow="autoplay; fullscreen"
+              allowFullScreen
+              name="wistia_embed"
+              className="wistia_embed"
+            />
+          </VideoContainer>
+        </HeroContent>
+        <CharacterWrapper>
+          <Image src={character} alt="Personagem Garota da Oferta" width={380} height={500} priority />
+        </CharacterWrapper>
+      </HeroInner>
+      <CtaArea>
+        <CtaButton href={heroConfig.whatsappLink} target="_blank" rel="noopener noreferrer">
+          <CtaIconCircle>
+            <WhatsAppIcon />
+          </CtaIconCircle>
+          {heroConfig.ctaLabel}
+        </CtaButton>
+        <CtaSubtext>{heroConfig.ctaSubtext}</CtaSubtext>
+        <TrustRow>
+          {trustBadges.map(badge => (
+            <TrustBadgeItem key={badge.id}>
+              <Icon name={badge.iconName} size={16} color="#E91E8C" />
+              {badge.label}
+            </TrustBadgeItem>
+          ))}
+        </TrustRow>
+      </CtaArea>
+    </HeroSection>
+  )
+}
 
 export default Hero

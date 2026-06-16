@@ -1,10 +1,10 @@
 import type { HeroConfig, TrustBadge } from '@views/main/subcomponents/hero/types'
-import type { FooterBadge } from '@views/main/subcomponents/footer/types'
 import type { BenefitCard } from '@views/main/subcomponents/benefits/types'
+import type { FooterBadge } from '@views/main/subcomponents/footer/types'
 import type { NavItem } from '@views/main/subcomponents/header/types'
 
 export const heroConfig: HeroConfig = {
-  wistiaVideoId: 'drajtxbncv',
+  wistiaVideoUrl: 'https://luizpmt1.wistia.com/medias/drajtxbncv?embedType=web_component&seo=true&videoWidth=960',
   whatsappLink: 'https://chat.whatsapp.com/BZBmnQs7Z3MGyQkoWLV82e',
   eyebrow: 'CHEGA DE PAGAR CARO! 💗',
   headlineLine1: 'AS MELHORES OFERTAS',

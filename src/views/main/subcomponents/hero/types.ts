@@ -7,7 +7,7 @@ export type TrustBadge = {
 }
 
 export type HeroConfig = {
-  wistiaVideoId: string
+  wistiaVideoUrl: string
   whatsappLink: string
   eyebrow: string
   headlineLine1: string
