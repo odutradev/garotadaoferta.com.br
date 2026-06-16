@@ -84,13 +84,14 @@ export const VideoContainer = styled.div`
   aspect-ratio: 16 / 9;
   border-radius: 18px;
   overflow: hidden;
-
+width: auto;
+height: auto;
   
   iframe {
     position: absolute;
     top: 0;
     left: 0;
-    height: auto;
+    height: 640px;
     width: 360px;
     border: 0;
   }
