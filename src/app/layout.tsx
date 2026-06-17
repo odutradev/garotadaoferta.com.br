@@ -1,9 +1,11 @@
 import { Nunito, Outfit } from 'next/font/google'
-import type { Metadata, Viewport } from 'next'
-import type { ReactNode } from 'react'
+import Script from 'next/script'
 
 import GlobalStylesProvider from '@lib/globalStylesProvider'
 import StyledComponentsRegistry from '@lib/registry'
+
+import type { Metadata, Viewport } from 'next'
+import type { ReactNode } from 'react'
 
 const nunito = Nunito({
   subsets: ['latin'],
@@ -124,6 +126,33 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: { children: ReactNode }) => (
   <html lang="pt-BR" className={`${nunito.variable} ${outfit.variable}`}>
     <body>
+      <Script
+        id="meta-pixel"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1027678589785687');
+            fbq('track', 'PageView');
+          `,
+        }}
+      />
+      <noscript>
+        <img
+          height="1"
+          width="1"
+          hidden
+          src="https://www.facebook.com/tr?id=1027678589785687&ev=PageView&noscript=1"
+          alt=""
+        />
+      </noscript>
       <StyledComponentsRegistry>
         <GlobalStylesProvider />
         {children}
