@@ -1,7 +1,11 @@
-import type { HeroConfig, TrustBadge } from '@views/main/subcomponents/hero/types'
 import type { BenefitCard } from '@views/main/subcomponents/benefits/types'
 import type { FooterBadge } from '@views/main/subcomponents/footer/types'
 import type { NavItem } from '@views/main/subcomponents/header/types'
+import type { HeroConfig, TrustBadge } from '@views/main/subcomponents/hero/types'
+
+export const analyticsConfig = {
+  facebookPixelId: '1029628809513521',
+}
 
 export const heroConfig: HeroConfig = {
   wistiaVideoUrl: 'https://luizpmt1.wistia.com/medias/drajtxbncv?embedType=web_component&seo=true&videoWidth=960',

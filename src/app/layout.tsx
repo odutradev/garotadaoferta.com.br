@@ -4,6 +4,8 @@ import Script from 'next/script'
 import GlobalStylesProvider from '@lib/globalStylesProvider'
 import StyledComponentsRegistry from '@lib/registry'
 
+import { analyticsConfig } from '../landingConfig'
+
 import type { Metadata, Viewport } from 'next'
 import type { ReactNode } from 'react'
 
@@ -139,7 +141,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => (
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '1027678589785687');
+            fbq('init', '${analyticsConfig.facebookPixelId}');
             fbq('track', 'PageView');
           `,
         }}
@@ -148,8 +150,8 @@ const RootLayout = ({ children }: { children: ReactNode }) => (
         <img
           height="1"
           width="1"
-          hidden
-          src="https://www.facebook.com/tr?id=1027678589785687&ev=PageView&noscript=1"
+          style={{ display: 'none' }}
+          src={`https://www.facebook.com/tr?id=${analyticsConfig.facebookPixelId}&ev=PageView&noscript=1`}
           alt=""
         />
       </noscript>
